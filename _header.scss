@@ -129,13 +129,7 @@ font-size: 10px;
     }
 }
 
-@media only screen and (max-width:470px){
-    .header_nav_link{
-font-size: 8px;
-    }
-}
-
-@media only screen and (max-width:400px){
+@media only screen and (max-width:500px){
     .header_logo_box{
         width: 50%;
     }
