@@ -787,7 +787,7 @@ main {
   }
 }
 
-@media only screen and (max-width: 400px) {
+@media only screen and (max-width: 500px) {
   .product_coffee {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
