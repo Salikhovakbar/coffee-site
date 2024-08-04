@@ -1,0 +1,402 @@
+main{
+    margin: 50px auto;
+    width: 95%;
+}
+
+.container_product{
+    padding: 50px 0;
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.product_coffee{
+    width: 255px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    overflow: hidden;
+}
+
+.product_coffee_img_box{
+    width: 80%;
+    height: 50%;
+}
+
+.product_coffee_img_box > img{
+    object-fit: contain;
+    width: 100%;
+    height: 100%;
+}
+
+.coffee_product_text{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.product_coffee h3{
+font-size: 24px;
+font-weight: 900;
+line-height: 32px;
+text-align: center;
+}
+
+.product_coffee p{
+font-weight: 400;
+line-height: 26px;
+text-align: center;
+max-width: 90%;
+}
+
+.container_about_us{
+    margin: 50px auto;
+    padding: 50px 0;
+    width: 95%;
+    height: 110vh;
+    background-color: #2C343E;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.about_text_box{
+    height: 40%;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+
+.about_title{
+font-size: 40px;
+font-weight: 900;
+line-height: 48px;
+text-align: center;
+color: white;
+}
+
+.about_title_description{
+font-size: 16px;
+font-weight: 400;
+line-height: 26px;
+text-align: center;
+color: white;
+max-width: 550px;
+}
+
+.about_cards{
+    height: 50%;
+    width: 80%;
+margin: 0 auto;
+display: grid;
+grid-template-columns: repeat(3, 1fr);
+grid-template-rows: 1fr;
+grid-gap: 20px;
+}
+
+.about_cards > div{
+   overflow: hidden;
+}
+
+.about_cards > div:hover{
+background: #0A6260;
+transition: 0.5s;
+cursor: pointer;
+}
+
+.about_card_text{
+    width: 100%;
+    display: flex;
+    height: 40%;
+    flex-direction: column;
+    align-items: center;
+}
+
+.about_cards > div{
+    background: #0E8784;
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    flex-direction: column;
+    i{
+        color: #FDD6BA;
+        font-size: 50px;
+    }
+}
+.card_text_title{
+font-size: 24px;
+font-weight: 900;
+line-height: 32px;
+text-align: center;
+color: #FEFCF7;
+}
+.card_text_description{
+font-size: 16px;
+font-weight: 400;
+line-height: 26px;
+color: #FEFCF7;
+text-align: center;
+max-width: 80%;
+}
+
+.container_details{
+    width: 95%;
+    margin: 0 auto;
+    padding-top: 50px;
+}
+
+.details_title_text{
+font-size: 24px;
+font-weight: 900;
+line-height: 32px;
+text-align: left;
+color: #83888F;
+}
+
+.details_cards{
+    width: 100%;
+    height: auto;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: 355px;
+    justify-content: space-between;
+    margin: 50px 0;
+}
+
+.detail_box{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+.detail_box_number{
+font-size: 72px;
+font-weight: 900;
+line-height: 72px;
+text-align: left;
+color: #FDD6BA;
+}
+
+.detail_box_title{
+font-size: 32px;
+font-weight: 900;
+line-height: 36px;
+text-align: left;
+max-width: 70%;
+}
+
+.detail_box_description{
+font-size: 16px;
+font-weight: 400;
+line-height: 26px;
+text-align: left;
+max-width: 95%;
+}
+
+.detail_box_btn{
+    margin-top: 50px;
+}
+
+@media only screen and (max-width: 990px){
+    .container_about_us{
+        height: 120vh;
+    }
+    .about_cards{
+        height: 60%;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: 1fr 1fr;
+    }   
+    .detail_box_number{
+        font-size: 60px;
+        font-weight: 900;
+        line-height: 72px;
+        text-align: left;
+        color: #FDD6BA;
+        }
+        
+        .detail_box_title{
+        font-size: 25px;
+        font-weight: 700;
+        line-height: 36px;
+        text-align: left;
+        max-width: 70%;
+        }
+        
+        .detail_box_description{
+        font-size: 14px;
+        }
+}
+
+@media only screen and (max-width: 768px){
+.product_coffee{
+    width: 90%;
+    flex-direction: row;
+}
+.product_coffee_img_box{
+    width: 70%;
+    height: 65%;
+}
+.container_about_us{
+    height: 120vh;
+}
+.about_title_description{
+font-size: 32px;
+font-weight: 900;
+line-height: 48px;
+text-align: center;
+}
+.about_title_description{
+font-size: 15px;
+font-weight: 400;
+line-height: 25px;
+text-align: center;
+
+}
+.about_cards{
+    height: 60%;
+grid-template-columns: 1fr;
+grid-template-rows: 1fr 1fr 1fr;
+}  
+.about_cards > div{
+    flex-direction: row;
+}
+.about_card_text{
+    width: 50%;
+    height: 100%;
+    justify-content: center;
+}
+.card_text_title{
+    font-size: 20px;
+    font-weight: 700;
+    line-height: 25px;
+    text-align: left;
+        }
+        .card_text_description{
+    font-size: 15px;
+    line-height: 20px;
+}
+}
+@media only screen and (max-width: 550px){
+ .product_coffee{
+     margin: 10px 0;
+     h3{
+         font-size: 20px;
+     }
+     p{
+         font-size: 13px;
+     }
+ }   
+ .about_title_description{
+     font-size: 13px;
+     max-width: 80%;
+ }
+ .product_coffee_img_box{
+     height: 80%;
+ }
+ #card_icon {
+     font-size: 35px;
+ }
+ .card_text_title{
+    font-size: 15px;
+    font-weight: 700;
+    line-height: 25px;
+    text-align: left;
+        }
+        .card_text_description{
+    font-size: 12px;
+    line-height: 20px;
+}
+.detail_box_number{
+    font-size: 50px;
+}
+.detail_box_title{
+    font-size: 15px;
+}
+.detail_box_description{
+    font-size: 10px;
+}
+}
+
+
+@media only screen and (max-width: 400px){
+    .product_coffee{
+        flex-direction: column;
+        margin: 10px 0;
+        h3{
+            font-size: 24px;
+            font-weight: 900;
+            line-height: 32px;
+            text-align: center;
+           }
+        p{
+            font-size: 15px;
+            font-weight: 400;
+            line-height: 25px;
+            text-align: center;
+            
+        }
+    }
+    .container_about_us{
+        height: 200vh;
+    }
+    .about_cards{
+        width: 90%;
+    }
+    .about_title{
+font-size: 28px;
+font-weight: 900;
+line-height: 28px;
+text-align: center;
+    }
+    .about_title_description{
+font-size: 15px;
+font-weight: 400;
+line-height: 25px;
+text-align: center;
+
+    }
+    .about_cards > div{
+    flex-direction: column;
+    }   
+    #card_icon{
+        font-size: 35px;
+    }
+    .about_card_text{
+        height: 50%;
+    }
+    .card_text_title{
+        font-size: 17px;
+    }
+    .card_text_description{
+        font-size: 13px;
+    }
+    .details_cards{
+        grid-template-columns: 1fr;
+        grid-template-rows: 355px;
+    }
+    .detail_box{
+        align-items: center;
+    }
+    .detail_box_number{
+        font-size: 72px;
+        font-weight: 900;
+        line-height: 72px;
+        text-align: center;        
+    }
+    .detail_box_title{
+font-size: 28px;
+font-weight: 900;
+line-height: 32px;
+text-align: center;
+    }
+    .detail_box_description{
+font-size: 15px;
+font-weight: 400;
+line-height: 25px;
+text-align: center;
+    }
+}
